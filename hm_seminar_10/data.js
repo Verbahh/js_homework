@@ -3,7 +3,7 @@ const api_json = '{"comments":[{"id":1,"body":"This is some awesome thinking!","
 
 const data = JSON.parse(api_json);
 const divCommentsEl = document.querySelector('.post-comments');
-console.log(divCommentsEl)
+
 
 data.comments.forEach(({body, user}) => {
     const baseComment = document.createElement('div');
@@ -21,5 +21,5 @@ data.comments.forEach(({body, user}) => {
     baseComment.appendChild(divBody);
     divCommentsEl.appendChild(baseComment);
 });
-console.log(JSON.parse(api_json));
+
 
